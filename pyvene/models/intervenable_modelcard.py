@@ -19,6 +19,7 @@ from .qwen3.modelings_intervenable_qwen3 import *
 from .esm.modelings_intervenable_esm import *
 from .mllama.modelings_intervenable_mllama import *
 from .gpt_oss.modelings_intervenable_gpt_oss import *
+from .cohere.modelings_intervenable_cohere import *
 
 #########################################################################
 """
