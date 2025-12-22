@@ -63,6 +63,11 @@ cohere_type_to_module_mapping = {
         CONST_OUTPUT_HOOK,
         (split_head_and_permute, "num_key_value_heads"),
     ),
+    "head_attention_value_output": (
+        "layers[%s].self_attn.o_proj",
+        CONST_INPUT_HOOK,
+        (split_head_and_permute, "num_attention_heads"),
+    ),
 }
 
 ############################################
