@@ -90,6 +90,10 @@ type_to_module_mapping = {
     hf_models.mllama.modeling_mllama.MllamaForConditionalGeneration: mllama_type_to_module_mapping,
     hf_models.gpt_oss.modeling_gpt_oss.GptOssModel: gpt_oss_type_to_module_mapping,
     hf_models.gpt_oss.modeling_gpt_oss.GptOssForCausalLM: gpt_oss_lm_type_to_module_mapping,
+
+    # Misha's additional models
+    hf_models.cohere.modeling_cohere.CohereModel: cohere_type_to_module_mapping,
+    hf_models.cohere.modeling_cohere.CohereForCausalLM: cohere_lm_type_to_module_mapping,
 }
 if enable_blip:
     type_to_module_mapping[BlipWrapper] = blip_wrapper_type_to_module_mapping
@@ -136,6 +140,10 @@ type_to_dimension_mapping = {
     hf_models.mllama.modeling_mllama.MllamaForConditionalGeneration: mllama_type_to_dimension_mapping,
     hf_models.gpt_oss.modeling_gpt_oss.GptOssModel: gpt_oss_type_to_dimension_mapping,
     hf_models.gpt_oss.modeling_gpt_oss.GptOssForCausalLM: gpt_oss_lm_type_to_dimension_mapping,
+
+    # Misha's additional models
+    hf_models.cohere.modeling_cohere.CohereModel: cohere_type_to_dimension_mapping,
+    hf_models.cohere.modeling_cohere.CohereForCausalLM: cohere_lm_type_to_dimension_mapping,
 }
 
 if enable_blip:
